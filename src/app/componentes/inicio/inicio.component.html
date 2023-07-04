@@ -1,0 +1,11 @@
+<div class="card-deck">
+  <div class="card" *ngFor="let artwork of artworks">
+    <img [src]="artwork.image" class="card-img-top" alt="Artwork Image">
+    <div class="card-body">
+      <h5 class="card-title">{{ artwork.title }}</h5>
+      <p class="card-text">{{ artwork.description }}</p>
+      <p class="card-text"><small class="text-muted">{{ artwork.artist }}</small></p>
+    </div>
+  </div>
+</div>
+
